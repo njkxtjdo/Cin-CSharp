@@ -4,7 +4,7 @@ namespace ConsoleApp1
 {
     public interface ICin
     {
-        public string Next(string type = "string");
+        public string Next(Type type = Type.String);
         public int NextInt();
         public long NextLong();
         public double NextDouble();

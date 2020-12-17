@@ -9,7 +9,7 @@ namespace ConsoleApp1
     {
         private char _nextChar = '\0';
 
-        public string Next(string type = "String")
+        public string Next(Type type = Type.String)
         {
             StringBuilder stringBuilder = new StringBuilder();
             while (true)
@@ -33,7 +33,7 @@ namespace ConsoleApp1
                         break;
                     }
                 }
-                else if (type == "Char")
+                else if (type == Type.Char)
                 {
                     if (stringBuilder.Length != 0)
                     {
@@ -43,11 +43,11 @@ namespace ConsoleApp1
 
                     stringBuilder.Append(ch);
                 }
-                else if (type == "Int32" || type == "Int64" || type == "BigInt" || type == "Double")
+                else if (type == Type.Int32 || type == Type.Int64 || type == Type.BigInt || type == Type.Double)
                 {
                     if (ch == '-' && stringBuilder.Length == 0 ||
                         Char.IsDigit(ch) ||
-                        type == "Double" && ch == '.' && stringBuilder.ToString().Count(f => f == '.') == 0)
+                        type == Type.Double && ch == '.' && stringBuilder.ToString().Count(f => f == '.') == 0)
                     {
                         stringBuilder.Append(ch);
                     }
@@ -66,11 +66,11 @@ namespace ConsoleApp1
             return stringBuilder.ToString();
         }
 
-        public int NextInt() => Convert.ToInt32(Next("Int32"));
-        public long NextLong() => Convert.ToInt64(Next("Int64"));
-        public double NextDouble() => Convert.ToDouble(Next("double"));
-        public char NextChar() => Convert.ToChar(Next("Char"));
+        public int NextInt() => Convert.ToInt32(Next(Type.Int32));
+        public long NextLong() => Convert.ToInt64(Next(Type.Int64));
+        public double NextDouble() => Convert.ToDouble(Next(Type.Double));
+        public char NextChar() => Convert.ToChar(Next(Type.Char));
         public string NextLine() => Console.ReadLine();
-        public BigInteger NextBigInteger() => BigInteger.Parse(Next("BigInt"));
+        public BigInteger NextBigInteger() => BigInteger.Parse(Next(Type.BigInt));
     }
 }
