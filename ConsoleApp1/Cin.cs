@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    public static class Cin
+    public class Cin : ICin
     {
-        private static char _nextChar = '\0';
+        private char _nextChar = '\0';
 
-        public static string Next(string type = "string")
+        public string Next(string type = "string")
         {
             StringBuilder stringBuilder = new StringBuilder();
             while (true)
@@ -66,11 +66,11 @@ namespace ConsoleApp1
             return stringBuilder.ToString();
         }
 
-        public static int NextInt() => Convert.ToInt32(Next("int"));
-        public static long NextLong() => Convert.ToInt64(Next("long"));
-        public static double NextDouble() => Convert.ToDouble(Next("double"));
-        public static char NextChar() => Convert.ToChar(Next("char"));
-        public static string NextLine() => Console.ReadLine();
-        public static BigInteger NextBigInteger() => BigInteger.Parse(Next("bigInt"));
+        public int NextInt() => Convert.ToInt32(Next("int"));
+        public long NextLong() => Convert.ToInt64(Next("long"));
+        public double NextDouble() => Convert.ToDouble(Next("double"));
+        public char NextChar() => Convert.ToChar(Next("char"));
+        public string NextLine() => Console.ReadLine();
+        public BigInteger NextBigInteger() => BigInteger.Parse(Next("bigInt"));
     }
 }

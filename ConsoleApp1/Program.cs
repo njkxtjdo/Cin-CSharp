@@ -7,8 +7,9 @@ namespace ConsoleApp1
         static void Main()
         {
             // ваш код от сюда
-            string a = Cin.Next();
-            int b = Cin.NextInt();
+            ICin cin = new Cin();
+            string a = cin.Next();
+            int b = cin.NextInt();
             Console.WriteLine(a + b);
             // до сюда
         }
