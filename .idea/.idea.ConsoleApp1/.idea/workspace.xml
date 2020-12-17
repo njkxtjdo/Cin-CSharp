@@ -4,10 +4,7 @@
     <projectFile>ConsoleApp1/ConsoleApp1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e58586-2a6d-4199-bb31-3933168a13f6" name="Default Changelist" comment="First">
-      <change afterPath="$PROJECT_DIR$/ConsoleApp1/ICin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="61e58586-2a6d-4199-bb31-3933168a13f6" name="Default Changelist" comment="Convert static to non-static">
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/Cin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Cin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
     </list>
@@ -25,9 +22,9 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/ConsoleApp1/iCin.cs" />
+      <option value="$PROJECT_DIR$/ConsoleApp1/ICin.cs" />
       <option value="$PROJECT_DIR$/ConsoleApp1/Program.cs" />
       <option value="$PROJECT_DIR$/ConsoleApp1/Cin.cs" />
-      <option value="$PROJECT_DIR$/ConsoleApp1/ICin.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ln8WDxZp69F22fcHJvkXuTMHax" />
@@ -72,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608221527349</updated>
       <workItem from="1608221542756" duration="48000" />
-      <workItem from="1608227642513" duration="422000" />
+      <workItem from="1608227642513" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="First">
       <created>1608227818533</created>
@@ -81,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608227818533</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Convert static to non-static">
+      <created>1608228216448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608228216448</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +96,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First" />
-    <option name="LAST_COMMIT_MESSAGE" value="First" />
+    <MESSAGE value="Convert static to non-static" />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert static to non-static" />
   </component>
 </project>

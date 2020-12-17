@@ -8,8 +8,8 @@ namespace ConsoleApp1
         {
             // ваш код от сюда
             ICin cin = new Cin();
-            string a = cin.Next();
-            int b = cin.NextInt();
+            String a = cin.Next();
+            Int32 b = cin.NextInt();
             Console.WriteLine(a + b);
             // до сюда
         }
